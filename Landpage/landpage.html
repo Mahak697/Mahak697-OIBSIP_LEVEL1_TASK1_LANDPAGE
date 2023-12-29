@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="landpage.css">
+    <title>Mahakart - Watches Showcase</title>
+    
+
+    <section class="header">
+        <nav>
+        <a href="mahakart.html"><img src="logo.png" alt="bg image" width="120" height="150"></a>
+       <div class="nav-links" id="navlinks">
+      <ul>
+           <li><a href="">HOME</a></li>
+           <li><a href="">ABOUT</a></li>
+           <li><a href="">FAVORITE</a></li>
+           <li><a href="">BUY</a></li>
+           <li><a href="">CART</a></li>
+           <li><a href="">CONTACT</a></li>
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+          </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+               <div class="text-box";>
+                   <h1>Mahakart - Watches Showcase</h1>
+                   <P>At Mahakart, we invite you to embark on a journey through our Watches Showcase, where timeless elegance meets modern craftsmanship. Our curated collection of watches reflects a harmonious blend of style, precision, and innovation. Each timepiece is a testament to the artistry and passion that goes into creating an exceptional accessory.</P>
+                   <a href="" class="hello-btn">Show Watches</a>
+               </div>
+            </section>
+
+
+
+         <style>
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Change to your preferred font-family */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #f4f4f4 25%, transparent 25%, transparent 75%, #f4f4f4 75%),
+                        linear-gradient(-45deg, #f4f4f4 25%, transparent 25%, transparent 75%, #f4f4f4 75%);
+            background-size: 20px 20px;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #4b93ae;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: pulse 1s infinite alternate; /* Added pulsating animation */
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            color: #555;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .watch-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .watch-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1em;
+            padding: 1em;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .watch-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .watch-image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .watch-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .watch-image:hover {
+            transform: scale(1.1);
+        }
+
+        .favorite-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 0.5em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .favorite-button:hover {
+            background-color: #c0392b;
+        }
+
+        .buy-now-button {
+            display: block;
+            width: 100%;
+            margin-top: 1em;
+            padding: 0.5em;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-now-button:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>showcase</h1>
+        <p>Explore our stunning collection of watches</p>
+    </header>
+
+    <section>
+        <div class="watch-container">
+            <div class="watch-card">
+                <div class="watch-image-container">
+                    <img class="watch-image" src="watch1.jpeg" alt="Watch 1">
+                </div>
+                <button class="favorite-button">&hearts;</button>
+                <h2>Classic Timepiece</h2>
+                <p>Experience timeless elegance with our classic watch collection.</p>
+                <p>$199.99</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="watch-card">
+                <div class="watch-image-container">
+                    <img class="watch-image" src="watch2.jpeg" alt="Watch 2">
+                </div>
+                <button class="favorite-button">&hearts;</button>
+                <h2>Sporty Adventure</h2>
+                <p>For the adventurous souls, our sporty watches are your perfect companion.</p>
+                <p>$149.99</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="watch-card">
+                <div class="watch-image-container">
+                    <img class="watch-image" src="watch3.jpeg" alt="Watch 3">
+                </div>
+                <button class="favorite-button">&hearts;</button>
+                <h2>Smart Watch</h2>
+                <p>For the adventurous souls, our sporty watches are your perfect companion.</p>
+                <p>$149.99</p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <!-- Add more watch cards as needed -->
+
+        </div>
+    </section>
+    <!-- -------------------------------------------- -->
+
+    <section class="footer"> 
+        <h4>ABOUT US</h4>
+        <p>Behind each watch lies a dedication to craftsmanship and quality. We partner with renowned artisans and watchmakers to bring you watches that not only adorn your wrist but also embody the precision and attention to detail that define luxury timepieces. Discover the artistry in every tick as you explore our carefully curated collection.</p>
+
+         <div class="icons">
+            <i class="fa fa-whatsapp-square"></i>
+            <i class="fa fa-facebook-square"></i>
+             <i class="fa fa-instagram-square"></i>
+             <i class="fa fa-linkedin"></i>
+             <i class="fa fa-twitter-square"></i>
+             <i class="fa fa-youtube"></i>
+            
+         </div>
+         <p>THANK YOU FOR VISITING</p>
+                      
+     </section>
+
+    
+        <p>&copy; 2023 Mahakart. All rights reserved.</p>
+    
+
+</body>
+
+</html>
